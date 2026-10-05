@@ -6,6 +6,12 @@ on:
   pull_request:
     branches: [ main ]
 
+# Zorg voor de juiste rechten voor de JUnit rapportage actie
+permissions:
+  contents: read
+  checks: write
+  statuses: write
+  
 jobs:
   maestro-tests:
     runs-on: macos-14
@@ -22,7 +28,7 @@ jobs:
 
       - name: Install Maestro CLI
         run: |
-          curl -Maestro https://get.maestro.mobile.dev | bash
+         curl -FsSL https://get.maestro.mobile.dev | bash
           echo "$HOME/.maestro/bin" >> $GITHUB_PATH
 
       - name: Run Maestro Tests on Android Emulator
