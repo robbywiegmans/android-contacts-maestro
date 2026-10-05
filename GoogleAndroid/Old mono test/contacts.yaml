@@ -1,0 +1,21 @@
+appId: com.google.android.contacts
+---
+- launchApp:
+    clearState: true              # Resets the app to a fresh state before starting
+- startRecording: recording       # Starts capturing a video of the execution
+- tapOn: Create contact
+- tapOn: First name
+- inputText: John
+# - tapOn: "Next"
+- tapOn: Last name
+- inputText: Doe
+# - tapOn: "Done"
+- tapOn: Company
+- inputText: Maestro
+# - tapOn: "Done"
+- tapOn: "+1"
+- inputText: 111-111-1111
+# - tapOn: "Done"
+- tapOn: Save
+- back                            # Returns to the main contact list
+- stopRecording                   # Saves the video file

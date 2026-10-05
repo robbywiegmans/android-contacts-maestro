@@ -1,0 +1,18 @@
+appId: com.google.android.contacts
+---
+- launchApp:
+    clearState: true # Start met schone app-state
+
+# Hergebruik de flow met specifieke testdata
+- runFlow:
+    file: flows/create_contact.yaml
+    env:
+      FIRST_NAME_LABEL: "First name"
+      LAST_NAME_LABEL: "Last name"
+      PHONE_LABEL: "Phone (Mobile)"
+      FIRST_NAME: "Alex"
+      LAST_NAME: "Turing"
+      PHONE_NUMBER: "+31612345678"
+
+# Verificatie (Assertie)
+- assertVisible: "Alex Turing"

@@ -1,0 +1,7 @@
+appId: com.google.android.contacts
+---
+- tapOn: "Search contacts"
+- inputText: "Alex Turing"
+- tapOn:
+    id: "app_bar_compose_view"
+

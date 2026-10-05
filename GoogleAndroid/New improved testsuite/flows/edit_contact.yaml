@@ -1,0 +1,13 @@
+appId: com.google.android.contacts
+---
+- tapOn: "Edit contact"
+
+# Telefoonnummer invoeren
+- tapOn:
+    text: "${PHONE_LABEL}"
+- eraseText: 13
+- inputText: "${PHONE_NUMBER}"
+- hideKeyboard
+
+# Opslaan via ID in plaats van tekst
+- tapOn: "Save"

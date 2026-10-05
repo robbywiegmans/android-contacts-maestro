@@ -1,0 +1,14 @@
+appId: com.google.android.contacts
+---
+- launchApp:
+    clearState: true # Start met schone app-state
+
+# Hergebruik de flow met specifieke testdata
+- runFlow:
+    file: flows/search_contact.yaml
+- runFlow:
+    file: flows/delete_contact.yaml
+
+# Verificatie (Assertie)
+- assertVisible: "No contacts yet"
+

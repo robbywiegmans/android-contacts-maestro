@@ -1,0 +1,14 @@
+appId: com.google.android.contacts
+---
+- tapOn: "Edit contact"
+- assertVisible: "Save"
+- tapOn:
+    point: 93%,6%
+- tapOn: "Delete"
+- assertVisible: "Delete contact?"
+- assertVisible: "This contact will be permanently deleted from your device"
+- assertVisible: "Cancel"
+- assertVisible: "Delete"
+- tapOn: "Delete"
+- tapOn: "Back"
+- assertVisible: "1 contact deleted"

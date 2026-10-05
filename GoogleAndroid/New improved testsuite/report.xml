@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="Medium_Phone" tests="3" failures="1" time="118.563" timestamp="2026-10-05T21:09:05">
+    <testcase id="01_create_contact_test" name="01_create_contact_test" classname="01_create_contact_test" file="01_create_contact_test.yaml" time="35.136" timestamp="2026-10-05T21:09:05" status="SUCCESS"/>
+    <testcase id="02_edit_contact_test" name="02_edit_contact_test" classname="02_edit_contact_test" file="02_edit_contact_test.yaml" time="32.315" timestamp="2026-10-05T21:09:40" status="SUCCESS"/>
+    <testcase id="03_delete_contact_test" name="03_delete_contact_test" classname="03_delete_contact_test" file="03_delete_contact_test.yaml" time="51.079" timestamp="2026-10-05T21:10:12" status="ERROR">
+      <failure>Assertion is false: "1 contact deleted" is visible</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

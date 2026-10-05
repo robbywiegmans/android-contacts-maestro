@@ -1,0 +1,13 @@
+appId: com.google.android.contacts
+---
+- launchApp:
+    clearState: true
+
+# Hergebruik de flow met specifieke testdata
+- runFlow:
+    file: flows/search_contact.yaml
+- runFlow:
+    file: flows/edit_contact.yaml
+    env:
+      PHONE_LABEL: "Phone (Mobile)"
+      PHONE_NUMBER: "+31687654321"
